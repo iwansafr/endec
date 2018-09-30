@@ -20,7 +20,7 @@ class endec{
 		'p' => ':',
 		'q' => '"',
 		'r' => '|',
-		's' => '<',
+		's' => 'Xs',
 		't' => '>',
 		'u' => '?',
 		'v' => '-',
@@ -41,6 +41,7 @@ class endec{
 		':' => 'Z',
 		' ' => 'S'
 	);
+	
 	public function encrypt($text = '')
 	{
 		return str_replace(array_keys($this->reff), $this->reff, strtolower($text));

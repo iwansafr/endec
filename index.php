@@ -10,7 +10,7 @@
 		$texte = @$_POST['texte'];
 		$textd = @$_POST['textd'];
 		include 'endec.php';
-
+		include 'function.php';
 		$endec = new endec();
 		$resulte = $endec->encrypt($texte);
 		$resultd = $endec->decrypt($textd);
